@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+th > span {
+	position: relative;
+  color: red;
+  top: 1px;
+}
+
+td {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+tfoot td {
+	padding-top: 10px;
+  background: #ffffff;
+}
+
+.first-column {
+  width: 200px;
+  background: #e8e2d4;
+  align : center;
+}
+
+.comment {
+	font-size: 12px;
+  color: blue;
+}
+
+.temp-line {
+  height: 5px;
+}

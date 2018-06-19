@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+/* UI Object */
+.select {
+	position: relative;
+	width: 300px;
+	font-family: '돋움', dotum;
+	font-size: 12px;
+}
+
+.select ul,.select li,.select dl,.select dt,.select dd,.select p {
+	margin: 0;
+	padding: 0;
+}
+
+.select li {
+	list-style: none;
+}
+
+.select .select_label {
+	height: 12px;
+	padding: 4px 17px 3px 5px;
+	border: 1px solid #6e706f;
+	border-right-color: #d4d5d7;
+	border-bottom-color: #d4d5d7;
+	background: #fff url(../image/arrow.gif) no-repeat 100% 0;
+	line-height: 12px;
+	cursor: pointer;
+	_cursor: hand;
+}
+
+.select .select_label span {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.select .select_layer {
+	position: absolute;
+	top: 19px;
+	left: 0;
+	width: 100%;
+	background: #fff;
+}
+
+.select .select_layer {
+  display: none;
+}
+
+.select.open .select_layer {
+  display: block;
+}
+
+.select .select_layer ul {
+	border: 1px solid #d4d5d7;
+	border-left-color: #6e706f;
+	border-top: 0;
+	padding: 1px 2px 2px;
+}
+
+.select .select_layer ul li {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.select .select_layer ul li dl dt {
+	display: block; 
+	*display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 1px;
+	color: #666;
+	line-height: 100%;
+	cursor: pointer;
+	_cursor: hand;
+}
+
+.select .select_layer ul li dl dt span {
+	display: block;
+	overflow: hidden;
+	padding: 4px 3px 3px;
+	white-space: nowrap;
+}
+
+.select .select_layer ul li dl {
+	position: relative;
+}
+
+.select .select_layer ul li dl dd {
+	/*display: none;*/
+	position: absolute;
+	top: -2px;
+	left: 100%;
+	margin-left: -5px;
+	padding-left: 14px;
+	background: url(../image/speech.gif) no-repeat 10px -1px;
+	color: #fff;
+	line-height: 15px;
+}
+
+.select .select_layer ul li dl dd {
+  display: none;
+}
+
+.select .select_layer ul li:hover dl dd {
+  display: block;
+}
+
+.select .select_layer ul li dl dd p {
+	padding: 4px;
+	border: 1px solid #333;
+	border-left: 0;
+	background: #4d4d4d;
+	white-space: nowrap;
+}
+
+.select .select_layer ul li dl dd img {
+	vertical-align: top;
+}
+
+/* //UI Object */
