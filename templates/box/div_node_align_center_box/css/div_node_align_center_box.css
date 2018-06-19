@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+/* UI Object */
+.box-type {
+	position: relative;
+	_height: 1%;
+	background-color: #fff
+}
+
+.box-type p {
+	padding: 10px;
+	font-size: 12px
+}
+
+.box-type .lt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	background: #e2decd url(../image/bg_round_corner.gif) no-repeat 0 0;
+	font-size: 0
+}
+
+.box-type .rt {
+	position: absolute;
+	top: 0;
+	right: -1px;
+	width: 4px;
+	height: 4px;
+	background: #e2decd url(../image/bg_round_corner.gif) no-repeat 100% 0;
+	font-size: 0
+}
+
+.box-type .lb {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 4px;
+	height: 4px;
+	background: #e2decd url(../image/bg_round_corner.gif) no-repeat 0 100%;
+	font-size: 0
+}
+
+.box-type .rb {
+	position: absolute;
+	right: -1px;
+	bottom: 0;
+	width: 4px;
+	height: 4px;
+	background: #e2decd url(../image/bg_round_corner.gif) no-repeat 100% 100%;
+	font-size: 0
+}
+/* //UI Object */

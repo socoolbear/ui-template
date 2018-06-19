@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+/*
+header, nav, footer, article {
+  display: block;
+}  
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+article {
+  float: right;
+  width: 79%;
+}
+
+footer {
+  clear: both;
+}
+
+* {
+	border: 1px solid silver;
+}
+
+*/
+.clear {
+	clear: both;
+}
+
+.footer {
+	clear: both;
+}
+
+/**
+ * Toolbar :: 아이템 추가 버튼 Bar
+ */
+.toolbar {
+	float: left;
+	width: 137px;
+	background-color: #f0f0f0;
+  border: 1px solid #979797;
+  margin-right: 3px; 
+  padding: 3px;
+}
+
+.toolbar-item {
+	padding: 8px;
+	margin: 5 5 5 0;
+	border: 1px solid #f0f0f0;
+}
+
+.toolbar-item:hover {
+	background: #aecff7;
+	/* Mozilla: */
+	background: -moz-linear-gradient(top, #f2f4f6, #e6edf6);
+	/* Chrome, Safari:*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f6),
+		to(#e6edf6) );
+	cursor: pointer;
+	border: 1px solid #aecff7;
+}
+
+/**
+ * Canvas :: 아이템이 생성되는 곳
+ */
+.canvas {
+	float: left;
+	border: 1px solid #979797;
+	padding: 3px;
+	/* background-color: #f0f0f0; */
+}
+
+/**
+ * Edit disable Cover :: 수정 방지 커버
+ */
+.cover {
+	position: absolute;
+	z-index: 12;
+}
+
+/**
+ * Contextmenu :: '우' 클릭 메뉴
+ */
+.contextmenu {
+	position: absolute;
+	background-color: #f0f0f0;
+	border: 1px solid #979797;
+	width: 190px;
+	padding: 2px;
+}
+
+.contextmenu div {
+	position: relative;
+	font-style: 고딕;
+	font-size: 12px;
+	border: 1px solid #f0f0f0;
+}
+
+/*Contextmenu의 separator*/
+.contextmenu hr {
+	margin-left: 27px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #ffffff;
+	border-left: 0px;
+}
+
+.contextmenu div:hover { /* fallback (Opera) */
+	background: #aecff7;
+	/* Mozilla: */
+	background: -moz-linear-gradient(top, #f2f4f6, #e6edf6);
+	/* Chrome, Safari:*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f4f6),
+		to(#e6edf6) );
+	cursor: pointer;
+	border: 1px solid #aecff7;
+}
+
+.contextmenu img {
+	width: 15px;
+}
+
+.contextmenu div[disabled=true] {
+	color: silver;
+}
+
+.contextmenu div[disabled=true]:hover { /* fallback (Opera) */
+	background: #d4d3d3;
+	/* Mozilla: */
+	background: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+	/* Chrome, Safari:*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2),
+		to(#e6e6e6) );
+	cursor: pointer;
+	border: 1px solid #d4d3d3;
+}
+
+.contextmenu div.disable {
+	color: silver;
+}
+
+.contextmenu div.disable:hover { /* fallback (Opera) */
+	background: #d4d3d3;
+	/* Mozilla: */
+	background: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+	/* Chrome, Safari:*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2),
+		to(#e6e6e6) );
+	cursor: pointer;
+	border: 1px solid #d4d3d3;
+}

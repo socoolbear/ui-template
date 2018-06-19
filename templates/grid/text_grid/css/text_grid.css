@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+/* UI Object */ 
+
+table.text-grid {
+  font-size: 14px;
+  cursor: hand;
+}
+
+table.text-grid tr {
+  height: 40px;
+}
+
+table.text-grid thead th {
+	border-top: 4px solid #aabcfe; 
+	background: #b9c9fe;
+	color: #003399;
+}
+
+table.text-grid tbody td {
+	border-top: 3px solid white;
+	padding-left: 10px;
+  color: #003399;
+  background: #e8edff;
+}
+
+table.text-grid tbody tr:hover td  {
+	background: #aabcfe;
+}
+
+
+table.text-grid tfoot td {
+	border-top: 3px solid #aabcfe;
+  text-align: center; 
+  background: #b9c9fe;
+}
+
+/* //UI Object */

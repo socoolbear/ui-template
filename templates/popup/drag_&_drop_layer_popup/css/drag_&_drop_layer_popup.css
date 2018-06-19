@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+
+/* UI Object */ /* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select
+	{
+	margin: 0;
+	padding: 0;
+}
+
+body,input,textarea,select,button,table {
+	font-family: '돋움', Dotum, AppleGothic, sans-serif;
+	font-size: 12px;
+}
+
+img,fieldset {
+	border: 0;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+em,address {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,a:active,a:focus {
+	text-decoration: underline;
+}
+
+/* Layer Popup */
+#popup-button {
+	position: relative;
+	width: 50px;
+	height: 30px;
+}
+
+img, fieldset {
+	border: none;
+}
+
+legend {
+	display: none;
+}
+
+.pop-content {
+	width : 300px;
+	position: relative;
+	z-index: 20;
+	border: 2px solid #777;
+	background: #fff;
+	display: none;
+}
+
+.pop-content-header {
+	margin: 0 0 5px;
+	padding: 8px 0 7px 11px;
+	background: #f4f4f4;
+	color: #000;
+	font-family: '돋움', Dotum, '굴림', Gulim, AppleGothic, Sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.pop-content-body {
+	margin: 0 20px;
+	padding: 15px 0 4px;
+	color: #444;
+	font-family: '돋움', Dotum, '굴림', Gulim, AppleGothic, Sans-serif;
+	font-size: 12px;
+}
+
+.pop-content-body dt {
+	margin: 0 0 9px;
+}
+
+.pop-content-body dd {
+	margin: 0 0 6px;
+}
+
+.pop-content-body .input-radio {
+	_margin: -3px;
+	vertical-align: middle;
+}
+
+.popup-close-anchor {
+	position: absolute;
+	top: 9px;
+	right: 9px;
+}
+
+.pop-footer {
+	margin: 0 20px;
+	padding: 10px 0 15px;
+	border-top: 1px solid #e8e8e8;
+	text-align: center;
+}
+
+.pop-footer input, .pop-footer a, .pop-footer img {
+	vertical-align: top;
+}
+
+.pop-footer input, .pop-footer a {
+	margin: 0 1px 0 0;
+}
+/* //UI Object */

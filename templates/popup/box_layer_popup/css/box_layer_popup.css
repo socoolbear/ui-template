@@ -1,0 +1,139 @@
+@CHARSET "UTF-8";
+
+/* UI Object */ /* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select
+	{
+	margin: 0;
+	padding: 0;
+}
+
+body,input,textarea,select,button,table {
+	font-family: '돋움', Dotum, AppleGothic, sans-serif;
+	font-size: 12px;
+}
+
+img,fieldset {
+	border: 0;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+em,address {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,a:active,a:focus {
+	text-decoration: underline;
+}
+
+/* Layer Popup */
+#popup-button {
+	position: relative;
+	width: 50px;
+	height: 30px;
+}
+
+#pop-wrap {
+	display: none;
+	overflow: visible;
+	position: absolute;
+	width:288px;
+	top:50px;
+	left:20px;
+	line-height: normal;
+}
+
+#pop-wrap img,#pop-wrap fieldset {
+	border: none;
+}
+
+#pop-wrap legend {
+	display: none;
+}
+
+.pop-content {
+	position: relative;
+	z-index: 20;
+	border: 2px solid #777;
+	background: #fff;
+}
+
+#pop-wrap .pop-content-header {
+	margin: 0 0 5px;
+	padding: 8px 0 7px 11px;
+	background: #f4f4f4;
+	color: #000;
+	font-family: '돋움', Dotum, '굴림', Gulim, AppleGothic, Sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#pop-wrap .pop-content-body {
+	margin: 0 20px;
+	padding: 15px 0 4px;
+	color: #444;
+	font-family: '돋움', Dotum, '굴림', Gulim, AppleGothic, Sans-serif;
+	font-size: 12px;
+}
+
+#pop-wrap .pop-content-body dt {
+	margin: 0 0 9px;
+}
+
+#pop-wrap .pop-content-body dd {
+	margin: 0 0 6px;
+}
+
+#pop-wrap .pop-content-body .input-radio {
+	_margin: -3px;
+	vertical-align: middle;
+}
+
+#pop-wrap .popup-close-anchor {
+	position: absolute;
+	top: 9px;
+	right: 9px;
+}
+
+#pop-wrap .shadow {
+	_display: none;
+	overflow: visible;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+#pop-wrap .shadow2 {
+	top: 3px;
+	left: 3px;
+	background: url(../image/shadow2.png);
+}
+
+#pop-wrap .shadow3 {
+	top: 2px;
+	left: 2px;
+	background: url(../image/shadow3.png);
+}
+
+.pop-footer {
+	margin: 0 20px;
+	padding: 10px 0 15px;
+	border-top: 1px solid #e8e8e8;
+	text-align: center;
+}
+
+.pop-footer input, .pop-footer a, .pop-footer img {
+	vertical-align: top;
+}
+
+.pop-footer input, .pop-footer a {
+	margin: 0 1px 0 0;
+}
+/* //UI Object */

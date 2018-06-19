@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+/* UI Object */ 
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select
+	{
+	margin: 0;
+	padding: 0;
+}
+
+body,input,textarea,select,button,table {
+	font-family: '돋움', Dotum, AppleGothic, sans-serif;
+	font-size: 12px;
+}
+ 
+img,fieldset {
+	border: 0;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+em,address {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,a:active,a:focus {
+	text-decoration: none;
+	cursor: hand;
+}
+
+/* Menu */
+.menu {
+	position: relative;
+	display: block;
+  border: 2px solid black;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 50px;
+}
+
+.menu > li {
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px; 
+  background: black;
+  color: white;
+}
+
+.menu > li:hover {
+	position: relative;
+  background: white;
+  color: black;
+}
+
+.menu > li:hover > ul {
+  display: block;
+}
+
+.menu > li > ul:hover {
+	display: block;
+}
+
+.menu > .selected {
+  background: white;
+  color: black;
+}
+
+.menu > li > ul {
+	width: 150px;
+  font-size: 12px;
+  border: 2px solid black;
+  position: absolute;
+  top: 40px;
+  left: -2px;
+  color: black;
+  background: white;
+  display: none;
+  text-align: left;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: white;
+}
+
+.menu > li > ul > li {
+  position: relative;
+	border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
